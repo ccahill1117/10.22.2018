@@ -6,11 +6,33 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title></title>
+    <title>Fav Things Webpage</title>
   </head>
   <body>
     <div class="container">
+      <form class="form form-group" action="submit" id="favThings">
+        <label for="exampleInputEmail1">Favorite Food</label>
+        <input class="form-control" id="favFood" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1">Favorite Music</label>
+        <input class="form-control" id="favMusic" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1">Favorite Day of The Week</label>
+        <input class="form-control" id="favDayOfTheWeek" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1">Favorite Animal</label>
+        <input class="form-control" id="favAnimal" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1">Favorite NBA Team</label>
+        <input class="form-control" id="favNBA" aria-describedby="emailHelp">
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="output">
+        <ul>
+          <li><span class="favFood"></span></li>
+          <li><span class="favMusic"></span></li>
+          <li><span class="favDayOfTheWeek"></span></li>
+          <li><span class="favAnimal"></span></li>
+          <li><span class="favNBA"></span></li>
+        </ul>
 
+      </div>
     </div>
 
   </body>
