@@ -14,7 +14,7 @@ $(document).ready(function() {
     debugger
 
 
-    event.preventDefault();
+  
 
   });
 
