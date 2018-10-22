@@ -1,11 +1,19 @@
 $(document).ready(function() {
   $("form#listEnter").submit(function(event) {
-    var inputGroc = $("#inputGroceries").val();
-    var splitGroc = inputGroc.split();
+    function splitString(stringToSplit, separator){
+      return stringToSplit.split(separator);
+    }
 
-    $(".outputList").text(splitGroc);
-    console.log(inputGroc);
-    console.log(splitGroc);
+
+    var inputGroc = $("#inputGroceries").val();
+    var comma = ', ';
+
+    var split = splitString(inputGroc, comma);
+
+    console.log(split);
+
+    
+
 
     event.preventDefault();
 
