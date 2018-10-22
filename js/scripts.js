@@ -1,22 +1,21 @@
 $(document).ready(function() {
 
-  $("form#favThings").submit(function(event) {
-    var things = ["favFood", "favMusic", "favDayOfTheWeek", "favAnimal", "favNBA"];
+  $("form#friends").submit(function(event) {
+    var friends = ["friend1", "friend2", "friend3"];
+    friends.forEach(function(friend) {
+      var userInput = $("input#" + friend).val();
+      $("." + friend).text(userInput);
 
-
-    things.forEach(function(thing) {
-      var userInput = $("input#" + thing).val();
-      $("." + thing).text(userInput);
-      console.log(thing + ",  userInput=" + userInput);
-      // debugger
 
     });
-    debugger
 
 
-  
+    $(".output").show();
+    event.preventDefault();
 
   });
+
+
 
 });
 
