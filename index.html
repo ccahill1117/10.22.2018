@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title></title>
+    <title>Groceries</title>
   </head>
   <body>
     <div class="container">
-
+      <form id="listEnter">
+        <div class="form-group">
+          <label for="groceries">Enter your groceries</label>
+            <input type="text" class="form-control" id="inputGroceries"  placeholder="Apples, beef, pears...">
+        </div>
+        <button type="submit" name="button">Add to List</button>
+      </form>
+      <div class="list">
+        <ul class="inputList">List</ul>
+      </div>
+      <div class="list">
+        <ul class="outputList">List</ul>
+      </div>
     </div>
 
   </body>
