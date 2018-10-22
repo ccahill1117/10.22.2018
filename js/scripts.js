@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("form#listEnter").submit(function(event) {
-    
+
     function splitString(stringToSplit, separator) {
         return (stringToSplit.split(separator).sort());
           // debugger
@@ -12,9 +12,11 @@ $(document).ready(function() {
 
     var split1 = splitString(inputGroc, comma);
 
+    console.log(split1);
 
 
 
+// https://www.w3resource.com/javascript-exercises/javascript-function-exercise-5.php
 
     function uppercase(str) {
       var newarray =[];
